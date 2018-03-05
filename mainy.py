@@ -42,13 +42,13 @@ def register():
 
 @app.route('/fixing', methods=['POST', 'GET'])
 def fixing():
-    a = request.form['username']
-    b = request.form['password']
-    c = request.form['achternaam']
-    d = request.form['adres']
-    e = request.form['aanhef']
-    return a + b + c + d + e
-
+#     a = request.form['username']
+#     b = request.form['password']
+#     c = request.form['achternaam']
+#     d = request.form['adres']
+#     e = request.form['aanhef']
+#     return a + b + c + d + e
+    return render_template('wat.html')
     # content = request.get_json(silent=True)
     # print(content)
     # return content
